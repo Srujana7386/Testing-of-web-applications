@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{#if title}}{{title}} | {{/if}}WCAG 2.2 Conformance Test Bed</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <meta name="description" content="Investigating Approaches to Automated Conformance Testing of Web Applications: A Controlled Comparison of DOM-Based and Accessibility-Tree-Based Testing against WCAG 2.2 Level AA">
+</head>
+<body data-app-state="ready" data-page-id="{{pageId}}">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <header class="app-header" role="banner">
+    <div class="header-container">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">A</div>
+        <h1 class="brand-title"><span>A11y</span> Research Test Bed</h1>
+        <span class="brand-badge">WCAG 2.2 AA</span>
+      </div>
+      <nav class="app-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="/" class="nav-link" data-route="home">Dashboard</a></li>
+          <li><a href="/register" class="nav-link" data-route="register">Test Register</a></li>
+          <li><a href="/scenarios" class="nav-link" data-route="scenarios">Dynamic Scenarios</a></li>
+          <li><a href="/components" class="nav-link" data-route="components">Component Catalogue</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="app-main" role="main" tabindex="-1">
+    {{{body}}}
+  </main>
+
+  <footer class="app-footer" role="contentinfo">
+    <div class="footer-container">
+      <p>Research Project: Controlled Comparison of DOM-Based vs. Accessibility-Tree-Based Automated Conformance Testing</p>
+      <p>&copy; {{currentYear}} Academic Research Test Bed. Evaluated against WCAG 2.2 Level AA.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

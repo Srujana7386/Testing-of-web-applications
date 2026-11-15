@@ -1,0 +1,36 @@
+{
+  "name": "automated-conformance-testing",
+  "version": "1.0.0",
+  "description": "Investigating Approaches to Automated Conformance Testing of Web Applications: A Controlled Comparison of DOM-Based and Accessibility-Tree-Based Testing of a Single Page Application against WCAG 2.2 Level AA",
+  "main": "src/server/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server/index.js",
+    "dev": "node --watch src/server/index.js",
+    "test": "node --test tests/**/*.test.js",
+    "verify:env": "node tests/verify-environment.js",
+    "verify:cdp": "node tests/verify-cdp.js",
+    "export:data": "node research/test-register/export-register.js",
+    "experiment": "node automation/orchestration/experiment-runner.js"
+  },
+  "keywords": [
+    "accessibility",
+    "wcag-2.2",
+    "dom-testing",
+    "accessibility-tree",
+    "playwright",
+    "cdp",
+    "express",
+    "handlebars",
+    "spa"
+  ],
+  "author": "University Research Project",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.21.2",
+    "express-handlebars": "^8.0.1"
+  },
+  "devDependencies": {
+    "playwright": "^1.50.1"
+  }
+}

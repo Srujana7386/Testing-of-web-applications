@@ -1,0 +1,429 @@
+[
+  {
+    "caseId": "TC-1.1.1-01",
+    "ruleId": "RULE-1.1.1",
+    "engineName": "DOM_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "findings": [
+        {
+          "el": "img",
+          "issue": "Missing alt attribute and aria-label",
+          "pass": false
+        }
+      ],
+      "inspectedCount": 1
+    },
+    "explanation": "DOM inspection detected non-text content without text alternatives: Missing alt attribute and aria-label",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:32.054Z"
+  },
+  {
+    "caseId": "TC-1.1.1-02",
+    "ruleId": "RULE-1.1.1",
+    "engineName": "DOM_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "findings": [
+        {
+          "el": "button",
+          "issue": "Actionable graphical button has no text, aria-label, or child alt",
+          "pass": false
+        },
+        {
+          "el": "img-in-btn",
+          "issue": "Empty alt inside unlabelled button",
+          "pass": false
+        }
+      ],
+      "inspectedCount": 2
+    },
+    "explanation": "DOM inspection detected non-text content without text alternatives: Actionable graphical button has no text, aria-label, or child alt; Empty alt inside unlabelled button",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:32.197Z"
+  },
+  {
+    "caseId": "TC-1.1.1-03",
+    "ruleId": "RULE-1.1.1",
+    "engineName": "DOM_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "findings": [
+        {
+          "el": "button",
+          "issue": "Actionable graphical button has no text, aria-label, or child alt",
+          "pass": false
+        },
+        {
+          "el": "svg",
+          "issue": "SVG graphic button lacks text alternative or aria-label",
+          "pass": false
+        }
+      ],
+      "inspectedCount": 2
+    },
+    "explanation": "DOM inspection detected non-text content without text alternatives: Actionable graphical button has no text, aria-label, or child alt; SVG graphic button lacks text alternative or aria-label",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:32.301Z"
+  },
+  {
+    "caseId": "TC-1.1.1-04",
+    "ruleId": "RULE-1.1.1",
+    "engineName": "DOM_ENGINE",
+    "verdict": "PASS",
+    "evidence": {
+      "inspectedCount": 1,
+      "status": "All images/icons expose alt or valid labels"
+    },
+    "explanation": "All non-text elements expose valid alt attributes, text alternatives, or are marked decorative.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:32.380Z"
+  },
+  {
+    "caseId": "TC-1.1.1-05",
+    "ruleId": "RULE-1.1.1",
+    "engineName": "DOM_ENGINE",
+    "verdict": "PASS",
+    "evidence": {
+      "inspectedCount": 1,
+      "status": "All images/icons expose alt or valid labels"
+    },
+    "explanation": "All non-text elements expose valid alt attributes, text alternatives, or are marked decorative.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:32.445Z"
+  },
+  {
+    "caseId": "TC-1.3.1-01",
+    "ruleId": "RULE-1.3.1",
+    "engineName": "DOM_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "authoredClass": "fake-heading-bold-large",
+      "authoredRole": null
+    },
+    "explanation": "Visual heading styled with div lacks semantic heading element (h1-h6) or role=\"heading\".",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:32.511Z"
+  },
+  {
+    "caseId": "TC-1.3.1-02",
+    "ruleId": "RULE-1.3.1",
+    "engineName": "DOM_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "inputId": "target-element",
+      "inputType": "email",
+      "explicitLabel": false
+    },
+    "explanation": "Form input control lacks explicit programmatic label association (no label[for] or ARIA label).",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:32.613Z"
+  },
+  {
+    "caseId": "TC-1.3.1-03",
+    "ruleId": "RULE-1.3.1",
+    "engineName": "DOM_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "bulletMarkup": true,
+      "hasListElements": false
+    },
+    "explanation": "Visual list structured using bullet characters and break tags without semantic ul/ol elements.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:32.696Z"
+  },
+  {
+    "caseId": "TC-1.3.1-04",
+    "ruleId": "RULE-1.3.1",
+    "engineName": "DOM_ENGINE",
+    "verdict": "PASS",
+    "evidence": {
+      "checks": "Headings, inputs, and list semantics verified in DOM"
+    },
+    "explanation": "Elements correctly expose programmatic semantic structures (labels, headings, lists).",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:32.769Z"
+  },
+  {
+    "caseId": "TC-1.3.1-05",
+    "ruleId": "RULE-1.3.1",
+    "engineName": "DOM_ENGINE",
+    "verdict": "PASS",
+    "evidence": {
+      "checks": "Headings, inputs, and list semantics verified in DOM"
+    },
+    "explanation": "Elements correctly expose programmatic semantic structures (labels, headings, lists).",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:32.851Z"
+  },
+  {
+    "caseId": "TC-2.1.1-01",
+    "ruleId": "RULE-2.1.1",
+    "engineName": "DOM_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "tag": "div",
+      "hasTabindex": false,
+      "hasClick": true
+    },
+    "explanation": "Interactive element with click action is not reachable via keyboard (missing tabindex or native control).",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:32.931Z"
+  },
+  {
+    "caseId": "TC-2.1.1-03",
+    "ruleId": "RULE-2.1.1",
+    "engineName": "DOM_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "tag": "a",
+      "hasTabindex": false,
+      "hasClick": true
+    },
+    "explanation": "Interactive element with click action is not reachable via keyboard (missing tabindex or native control).",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:33.015Z"
+  },
+  {
+    "caseId": "TC-2.4.2-02",
+    "ruleId": "RULE-2.4.2",
+    "engineName": "DOM_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "documentTitle": ""
+    },
+    "explanation": "Document title is an empty string.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:33.122Z"
+  },
+  {
+    "caseId": "TC-2.4.2-03",
+    "ruleId": "RULE-2.4.2",
+    "engineName": "DOM_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "documentTitle": "Untitled Page"
+    },
+    "explanation": "Document title \"Untitled Page\" is non-descriptive and generic.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:33.233Z"
+  },
+  {
+    "caseId": "TC-2.4.2-05",
+    "ruleId": "RULE-2.4.2",
+    "engineName": "DOM_ENGINE",
+    "verdict": "PASS",
+    "evidence": {
+      "documentTitle": "Test Case TC-2.4.2-05: Informative Title | WCAG 2.2"
+    },
+    "explanation": "Document title \"Test Case TC-2.4.2-05: Informative Title | WCAG 2.2\" is descriptive and non-empty.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:33.357Z"
+  },
+  {
+    "caseId": "TC-2.4.3-03",
+    "ruleId": "RULE-2.4.3",
+    "engineName": "DOM_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "element": "INPUT",
+      "positiveTabindex": 5
+    },
+    "explanation": "Positive tabindex=\"5\" disrupts natural DOM sequential focus navigation order.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:33.468Z"
+  },
+  {
+    "caseId": "TC-2.5.3-01",
+    "ruleId": "RULE-2.5.3",
+    "engineName": "DOM_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "visibleText": "delete record",
+      "authoredAriaName": "remove item"
+    },
+    "explanation": "Visible text \"delete record\" is not contained within the authored accessible name \"remove item\".",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:33.567Z"
+  },
+  {
+    "caseId": "TC-2.5.3-02",
+    "ruleId": "RULE-2.5.3",
+    "engineName": "DOM_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "visibleText": "download guide",
+      "authoredAriaName": "get whitepaper"
+    },
+    "explanation": "Visible text \"download guide\" is not contained within the authored accessible name \"get whitepaper\".",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:33.694Z"
+  },
+  {
+    "caseId": "TC-2.5.3-03",
+    "ruleId": "RULE-2.5.3",
+    "engineName": "DOM_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "visibleText": "send message",
+      "authoredAriaName": "transmit telemetry"
+    },
+    "explanation": "Visible text \"send message\" is not contained within the authored accessible name \"transmit telemetry\".",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:33.807Z"
+  },
+  {
+    "caseId": "TC-2.5.3-04",
+    "ruleId": "RULE-2.5.3",
+    "engineName": "DOM_ENGINE",
+    "verdict": "PASS",
+    "evidence": {
+      "match": "Accessible name contains visible text"
+    },
+    "explanation": "Accessible name correctly incorporates the visible text label.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:33.918Z"
+  },
+  {
+    "caseId": "TC-2.5.3-05",
+    "ruleId": "RULE-2.5.3",
+    "engineName": "DOM_ENGINE",
+    "verdict": "PASS",
+    "evidence": {
+      "match": "Accessible name contains visible text"
+    },
+    "explanation": "Accessible name correctly incorporates the visible text label.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:34.021Z"
+  },
+  {
+    "caseId": "TC-3.3.2-01",
+    "ruleId": "RULE-3.3.2",
+    "engineName": "DOM_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "placeholder": "Enter password",
+      "persistentLabel": false
+    },
+    "explanation": "Form input relies exclusively on transient placeholder without a persistent label.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:34.141Z"
+  },
+  {
+    "caseId": "TC-3.3.2-02",
+    "ruleId": "RULE-3.3.2",
+    "engineName": "DOM_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "visualIndicatorOnly": "border-red-required",
+      "programmaticRequired": false
+    },
+    "explanation": "Required field state communicated solely through visual CSS border without text or programmatic requirement.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:34.256Z"
+  },
+  {
+    "caseId": "TC-3.3.2-03",
+    "ruleId": "RULE-3.3.2",
+    "engineName": "DOM_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "pattern": "\\d{2}/\\d{2}/\\d{4}",
+      "instructionPresent": false
+    },
+    "explanation": "Input enforces strict pattern format but provides no instructional description or format cue.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:34.362Z"
+  },
+  {
+    "caseId": "TC-3.3.2-04",
+    "ruleId": "RULE-3.3.2",
+    "engineName": "DOM_ENGINE",
+    "verdict": "PASS",
+    "evidence": {
+      "labelsVerified": true
+    },
+    "explanation": "Inputs provide persistent labels and clear requirement/format instructions.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:34.475Z"
+  },
+  {
+    "caseId": "TC-3.3.2-05",
+    "ruleId": "RULE-3.3.2",
+    "engineName": "DOM_ENGINE",
+    "verdict": "PASS",
+    "evidence": {
+      "labelsVerified": true
+    },
+    "explanation": "Inputs provide persistent labels and clear requirement/format instructions.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:34.626Z"
+  },
+  {
+    "caseId": "TC-4.1.2-04",
+    "ruleId": "RULE-4.1.2",
+    "engineName": "DOM_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "authoredRole": "super-toggle",
+      "validRole": false
+    },
+    "explanation": "Authored role=\"super-toggle\" is not a valid WAI-ARIA role.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:34.771Z"
+  }
+]

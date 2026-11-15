@@ -1,0 +1,16 @@
+{
+  "experimentId": "EXP-1794736471434",
+  "startTime": "2026-11-15T09:54:31.434Z",
+  "nodeVersion": "v22.14.0",
+  "playwrightVersion": "1.65.0",
+  "chromiumVersion": "158.0.8127.18",
+  "operatingSystem": "Windows_NT 10.0.26300 (x64)",
+  "totalCases": 27,
+  "runsPerCase": 1,
+  "caseNature": "static",
+  "evaluators": [
+    "DOM",
+    "Accessibility Tree"
+  ],
+  "endTime": "2026-11-15T09:54:34.782Z"
+}

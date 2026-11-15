@@ -1,0 +1,62 @@
+{
+  "project": "Investigating Approaches to Automated Conformance Testing",
+  "targetStandard": "WCAG 2.2 Level AA",
+  "criteriaCount": 9,
+  "verdictTypes": ["PASS", "FAIL", "INAPPLICABLE", "NOT_TESTABLE"],
+  "rules": [
+    {
+      "ruleId": "RULE-1.1.1",
+      "wcagCriterion": "1.1.1",
+      "wcagLevel": "A",
+      "name": "Non-text Content Alternatives"
+    },
+    {
+      "ruleId": "RULE-1.3.1",
+      "wcagCriterion": "1.3.1",
+      "wcagLevel": "A",
+      "name": "Info and Relationships Semantic Structure"
+    },
+    {
+      "ruleId": "RULE-2.1.1",
+      "wcagCriterion": "2.1.1",
+      "wcagLevel": "A",
+      "name": "Keyboard Operability"
+    },
+    {
+      "ruleId": "RULE-2.4.2",
+      "wcagCriterion": "2.4.2",
+      "wcagLevel": "A",
+      "name": "Page Titled"
+    },
+    {
+      "ruleId": "RULE-2.4.3",
+      "wcagCriterion": "2.4.3",
+      "wcagLevel": "A",
+      "name": "Focus Order and Modal Containment"
+    },
+    {
+      "ruleId": "RULE-2.5.3",
+      "wcagCriterion": "2.5.3",
+      "wcagLevel": "A",
+      "name": "Label in Name Alignment"
+    },
+    {
+      "ruleId": "RULE-3.3.2",
+      "wcagCriterion": "3.3.2",
+      "wcagLevel": "A",
+      "name": "Labels or Instructions"
+    },
+    {
+      "ruleId": "RULE-4.1.2",
+      "wcagCriterion": "4.1.2",
+      "wcagLevel": "A",
+      "name": "Name, Role, Value"
+    },
+    {
+      "ruleId": "RULE-4.1.3",
+      "wcagCriterion": "4.1.3",
+      "wcagLevel": "AA",
+      "name": "Status Messages Exposure"
+    }
+  ]
+}

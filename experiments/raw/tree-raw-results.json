@@ -1,0 +1,411 @@
+[
+  {
+    "caseId": "TC-1.1.1-01",
+    "ruleId": "RULE-1.1.1",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "findings": [
+        {
+          "nodeId": "7",
+          "role": "image",
+          "issue": "Computed name is empty on unignored image"
+        }
+      ]
+    },
+    "explanation": "Accessibility Tree inspection identified non-text controls with empty computed names: Computed name is empty on unignored image",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:32.093Z"
+  },
+  {
+    "caseId": "TC-1.1.1-02",
+    "ruleId": "RULE-1.1.1",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "findings": [
+        {
+          "nodeId": "98",
+          "role": "button",
+          "issue": "Button control has empty computed accessible name"
+        }
+      ]
+    },
+    "explanation": "Accessibility Tree inspection identified non-text controls with empty computed names: Button control has empty computed accessible name",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:32.216Z"
+  },
+  {
+    "caseId": "TC-1.1.1-03",
+    "ruleId": "RULE-1.1.1",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "findings": [
+        {
+          "nodeId": "271",
+          "role": "image",
+          "issue": "Computed name is empty on unignored image"
+        },
+        {
+          "nodeId": "190",
+          "role": "button",
+          "issue": "Button control has empty computed accessible name"
+        }
+      ]
+    },
+    "explanation": "Accessibility Tree inspection identified non-text controls with empty computed names: Computed name is empty on unignored image; Button control has empty computed accessible name",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:32.307Z"
+  },
+  {
+    "caseId": "TC-1.1.1-04",
+    "ruleId": "RULE-1.1.1",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "PASS",
+    "evidence": {
+      "inspectedImages": 1,
+      "inspectedButtons": 0
+    },
+    "explanation": "All non-text nodes in the Accessibility Tree expose non-empty computed names or are correctly ignored.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:32.384Z"
+  },
+  {
+    "caseId": "TC-1.1.1-05",
+    "ruleId": "RULE-1.1.1",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "PASS",
+    "evidence": {
+      "inspectedImages": 0,
+      "inspectedButtons": 0
+    },
+    "explanation": "All non-text nodes in the Accessibility Tree expose non-empty computed names or are correctly ignored.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:32.448Z"
+  },
+  {
+    "caseId": "TC-1.3.1-01",
+    "ruleId": "RULE-1.3.1",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "headingNodesCount": 3,
+      "chapterHeadingInAXTree": false
+    },
+    "explanation": "Visual heading text was computed as a generic text/div node instead of an AX heading role.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:32.515Z"
+  },
+  {
+    "caseId": "TC-1.3.1-02",
+    "ruleId": "RULE-1.3.1",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "nodeId": "560",
+      "role": "textbox",
+      "computedName": ""
+    },
+    "explanation": "Computed Accessibility Tree node for input has empty accessible name; label association is missing.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:32.620Z"
+  },
+  {
+    "caseId": "TC-1.3.1-03",
+    "ruleId": "RULE-1.3.1",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "PASS",
+    "evidence": {
+      "semanticNodesVerified": true
+    },
+    "explanation": "Semantic relationships and roles (headings, inputs, lists) verified in computed Accessibility Tree.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:32.700Z"
+  },
+  {
+    "caseId": "TC-1.3.1-04",
+    "ruleId": "RULE-1.3.1",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "PASS",
+    "evidence": {
+      "semanticNodesVerified": true
+    },
+    "explanation": "Semantic relationships and roles (headings, inputs, lists) verified in computed Accessibility Tree.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:32.774Z"
+  },
+  {
+    "caseId": "TC-1.3.1-05",
+    "ruleId": "RULE-1.3.1",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "PASS",
+    "evidence": {
+      "semanticNodesVerified": true
+    },
+    "explanation": "Semantic relationships and roles (headings, inputs, lists) verified in computed Accessibility Tree.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:32.857Z"
+  },
+  {
+    "caseId": "TC-2.1.1-01",
+    "ruleId": "RULE-2.1.1",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "focusableNodesCount": 8,
+      "elementInFocusableAXTree": false
+    },
+    "explanation": "Interactive element is missing the focusable property in the computed Accessibility Tree.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:32.934Z"
+  },
+  {
+    "caseId": "TC-2.1.1-03",
+    "ruleId": "RULE-2.1.1",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "focusableNodesCount": 8,
+      "elementInFocusableAXTree": false
+    },
+    "explanation": "Interactive element is missing the focusable property in the computed Accessibility Tree.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:33.024Z"
+  },
+  {
+    "caseId": "TC-2.4.2-02",
+    "ruleId": "RULE-2.4.2",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "rootWebAreaName": ""
+    },
+    "explanation": "RootWebArea accessible name in the Accessibility Tree is empty.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:33.128Z"
+  },
+  {
+    "caseId": "TC-2.4.2-03",
+    "ruleId": "RULE-2.4.2",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "rootWebAreaName": "Untitled Page"
+    },
+    "explanation": "RootWebArea name \"Untitled Page\" is generic and non-descriptive.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:33.241Z"
+  },
+  {
+    "caseId": "TC-2.4.2-05",
+    "ruleId": "RULE-2.4.2",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "PASS",
+    "evidence": {
+      "rootWebAreaName": "Test Case TC-2.4.2-05: Informative Title | WCAG 2.2"
+    },
+    "explanation": "Accessibility Tree RootWebArea exposes valid descriptive name: \"Test Case TC-2.4.2-05: Informative Title | WCAG 2.2\".",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:33.362Z"
+  },
+  {
+    "caseId": "TC-2.4.3-03",
+    "ruleId": "RULE-2.4.3",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "tabindexDisruption": true
+    },
+    "explanation": "Positive tabindex creates an illogical jump in the browser focus navigation sequence.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:33.473Z"
+  },
+  {
+    "caseId": "TC-2.5.3-01",
+    "ruleId": "RULE-2.5.3",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "PASS",
+    "evidence": {
+      "labelInNameAligned": true
+    },
+    "explanation": "Computed accessible name matches or includes the visible label text.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:33.574Z"
+  },
+  {
+    "caseId": "TC-2.5.3-02",
+    "ruleId": "RULE-2.5.3",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "PASS",
+    "evidence": {
+      "labelInNameAligned": true
+    },
+    "explanation": "Computed accessible name matches or includes the visible label text.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:33.702Z"
+  },
+  {
+    "caseId": "TC-2.5.3-03",
+    "ruleId": "RULE-2.5.3",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "PASS",
+    "evidence": {
+      "labelInNameAligned": true
+    },
+    "explanation": "Computed accessible name matches or includes the visible label text.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:33.821Z"
+  },
+  {
+    "caseId": "TC-2.5.3-04",
+    "ruleId": "RULE-2.5.3",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "PASS",
+    "evidence": {
+      "labelInNameAligned": true
+    },
+    "explanation": "Computed accessible name matches or includes the visible label text.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:33.923Z"
+  },
+  {
+    "caseId": "TC-2.5.3-05",
+    "ruleId": "RULE-2.5.3",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "PASS",
+    "evidence": {
+      "labelInNameAligned": true
+    },
+    "explanation": "Computed accessible name matches or includes the visible label text.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:34.029Z"
+  },
+  {
+    "caseId": "TC-3.3.2-01",
+    "ruleId": "RULE-3.3.2",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "PASS",
+    "evidence": {
+      "formLabelsInstructionsVerified": true
+    },
+    "explanation": "Input controls expose computed accessible names and required properties.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:34.148Z"
+  },
+  {
+    "caseId": "TC-3.3.2-02",
+    "ruleId": "RULE-3.3.2",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "nodeId": "2065",
+      "computedRequired": false
+    },
+    "explanation": "Input lacks the computed required property in the Accessibility Tree (visual color cue only).",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:34.262Z"
+  },
+  {
+    "caseId": "TC-3.3.2-03",
+    "ruleId": "RULE-3.3.2",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "FAIL",
+    "evidence": {
+      "formatInstructionMissing": true
+    },
+    "explanation": "Strict date pattern required but no instructional description exposed in AX Tree node properties.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:34.369Z"
+  },
+  {
+    "caseId": "TC-3.3.2-04",
+    "ruleId": "RULE-3.3.2",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "PASS",
+    "evidence": {
+      "formLabelsInstructionsVerified": true
+    },
+    "explanation": "Input controls expose computed accessible names and required properties.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:34.482Z"
+  },
+  {
+    "caseId": "TC-3.3.2-05",
+    "ruleId": "RULE-3.3.2",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "PASS",
+    "evidence": {
+      "formLabelsInstructionsVerified": true
+    },
+    "explanation": "Input controls expose computed accessible names and required properties.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:34.640Z"
+  },
+  {
+    "caseId": "TC-4.1.2-04",
+    "ruleId": "RULE-4.1.2",
+    "engineName": "AX_TREE_ENGINE",
+    "verdict": "PASS",
+    "evidence": {
+      "rolesAndStatesVerified": true
+    },
+    "explanation": "Components expose valid computed roles, names, and state properties in AX Tree.",
+    "applicationState": "static",
+    "runId": 1,
+    "browserVersion": "158.0.8127.18",
+    "timestamp": "2026-11-15T09:54:34.782Z"
+  }
+]

@@ -1,0 +1,52 @@
+<section class="hero-section" style="padding: 1.5rem;">
+  <h2>WCAG 2.2 Level AA Test-Case Register</h2>
+  <p class="hero-subtitle">
+    Structured register of <strong>{{stats.total}}</strong> controlled test cases 
+    (<strong>{{stats.defects}}</strong> Defect Cases and <strong>{{stats.controls}}</strong> Compliant Controls).
+  </p>
+</section>
+
+<section class="card" style="margin-bottom: 2rem;">
+  <div class="card-header" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+    <h3>Register Filter Controls</h3>
+    <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+      <button class="filter-btn active" data-filter="all">All ({{stats.total}})</button>
+      <button class="filter-btn" data-filter="defect">Defects ({{stats.defects}})</button>
+      <button class="filter-btn" data-filter="compliant">Compliant ({{stats.controls}})</button>
+      <button class="filter-btn" data-filter="dynamic">Dynamic ({{stats.dynamic}})</button>
+      <button class="filter-btn" data-filter="static">Static ({{stats.static}})</button>
+    </div>
+  </div>
+  <div class="card-body" style="padding:0;">
+    <div class="criteria-table-container">
+      <table class="data-table" id="register-table">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">WCAG</th>
+            <th scope="col">Nature</th>
+            <th scope="col">Class</th>
+            <th scope="col">Category</th>
+            <th scope="col">Ground Truth</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each testCases}}
+          <tr data-classification="{{this.classification}}" data-nature="{{this.nature}}" data-criterion="{{this.wcagCriterion}}">
+            <td><strong>{{this.id}}</strong></td>
+            <td>{{this.name}}</td>
+            <td><span class="badge badge-wcag">{{this.wcagCriterion}} ({{this.wcagLevel}})</span></td>
+            <td><span class="badge badge-{{this.nature}}">{{this.nature}}</span></td>
+            <td><span class="badge badge-{{this.classification}}">{{this.classification}}</span></td>
+            <td><small>{{this.detectionCategory}}</small></td>
+            <td><span class="badge badge-outcome-{{this.groundTruthStatus}}">{{this.groundTruthStatus}}</span></td>
+            <td><a href="/test/{{this.id}}" class="btn-sm" data-route="test-{{this.id}}">Open Fixture</a></td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
